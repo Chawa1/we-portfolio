@@ -35,7 +35,8 @@
             display the newly generated URL to the user
             (when user clicks the newly generated URL, it should be copied to clipboard)
         -->
-      <img src="" alt="iamge" style="display: block" id="ourImage" />
+      <h2>Image Resizing Project</h2>
+      <img src="" alt="iamge" style="display: none" id="ourImage" />
       <form action="#">
         <div class="my-3">
           <label for="url">Unsplash URL</label>
@@ -51,7 +52,7 @@
         </div>
         <button class="btn btn-primary" onclick="resize()">Resize</button>
       </form>
-      <div class="d-block" id="new-url">new URL</div>
+      <span style="display: none" id="new-url" onclick="handleCopy()"></span>
     </div>
 
     <script
